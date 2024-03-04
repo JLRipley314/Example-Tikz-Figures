@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \node[] at (-1, 1) {\textcolor{blue}{Strong Force}};
+    \node[] at (-1, 0) {Weak Force};
+    \node[] at (-1,-1) {Electromagnetism};
+    \draw[thick, ->] (0.1, 1) -- (2, 0.2);
+    \draw[thick, ->] (0.1, 0) -- (2, 0.0);
+    \draw[thick, ->] (0.5,-1) -- (2,-0.2);
+    \node[] at (2.6,0) {$p\left(\rho\right)$};
+\end{tikzpicture}
+\end{document}

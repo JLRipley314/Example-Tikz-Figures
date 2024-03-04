@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath,amsfonts,amssymb}
+\usetikzlibrary{automata,positioning}
+\begin{document}
+\begin{tikzpicture}
+    \draw[rotate around={-45:(1,1)},black] (1,1) ellipse (14pt and 7.14pt); 
+    \draw[->] (0,0) -- (2,0);
+    \draw[->] (0,0) -- (0,2);
+    \node[] at (1,-0.5) {$V$};
+    \node[] at (-0.5,1) {$P$};
+    \node[] at (2,1.5) {$\int P dV$};
+\end{tikzpicture}
+\end{document}

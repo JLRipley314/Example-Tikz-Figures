@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    %\node[] at (0,1.7) {\small{$\delta h_{+,\times}(t)\approx A_{GR}(t) \exp\left(i\delta\Psi_{vis} t\right)$}};
+    \filldraw[color=black, fill=white,      opacity=0.4, very thick        ] (0,0) circle (1.5);
+    \filldraw[color=black, fill=white, fill opacity=0,   very thick, dashed] (0,0) ellipse (2 and 1);
+    \filldraw[color=black, fill=white, fill opacity=0,   very thick, dashed] (0,0) ellipse (1 and 2);
+    \draw[very thick, ->] (-4, 1) -- (-2.4, 1);
+    \draw[very thick, ->] (-4, 0) -- (-2.4, 0);
+    \draw[very thick, ->] (-4,-1) -- (-2.4,-1);
+    \draw[very thick, ->] (+4, 1) -- (+2.4, 1);
+    \draw[very thick, ->] (+4, 0) -- (+2.4, 0);
+    \draw[very thick, ->] (+4,-1) -- (+2.4,-1);
+    \draw[very thick, ->] (+1,+4) -- (+1,+2.4);
+    \draw[very thick, ->] ( 0,+4) -- ( 0,+2.4);
+    \draw[very thick, ->] (-1,+4) -- (-1,+2.4);
+    \draw[very thick, ->] (+1,-4) -- (+1,-2.4);
+    \draw[very thick, ->] ( 0,-4) -- ( 0,-2.4);
+    \draw[very thick, ->] (-1,-4) -- (-1,-2.4);
+    \node[] at (-3.2,0.3) {$E_{\mu\nu}(t)$} ;
+    \node[] at (1.5,1.5) {$Q_{\mu\nu}(t)$} ;
+    %\node[] at (-1,-4.4) {$Q_{\mu\nu}\approx -\lambda E_{\mu\nu} - \lambda_1 \frac{d}{dt}E_{\mu\nu}$} ;
+    \end{tikzpicture}
+\end{document}
+

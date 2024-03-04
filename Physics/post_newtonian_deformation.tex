@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw[color=blue!10, very thick](0,0) circle (2.828);
+    \filldraw[red, dashed, thick] ( 0, 0) -- (2, 2) node[midway,left] {\textcolor{black}{$r$}}; 
+    \filldraw[rotate around={45:(2,2)},black] (2,2) ellipse (14pt and 7.14pt) node[left] { $Q^{(A)}_{ij}\sim \Lambda E^{(B)}_{ij},\;m_A\;\;\;$};
+    \draw[thick, ->] ( 2, 2) -- ( 1.2, 2.8) node[above] {$v$};
+    \filldraw[rotate around={45:(-2,-2)},black] (-2,-2) ellipse (14pt and 7.14pt) node[right] { $\;\;\;m_B,\;Q^{(B)}_{ij}\sim \Lambda E^{(A)}_{ij}$};
+    \draw[thick, ->] (-2,-2) -- (-1.2,-2.8) node[below] {$v$};
+    \end{tikzpicture}
+\end{document}
+

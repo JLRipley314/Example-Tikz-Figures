@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw[very thick](0,0) circle (4);
+    \draw[color=black!50, very thick](0,0) circle (3.75);
+    \draw[color=black!10, very thick](0,0) circle (3.5);
+    \draw[color=black!50, very thick](0,0) circle (4.25);
+    \draw[color=black!10, very thick](0,0) circle (4.5);
+    \draw[thick, ->] (-1.5, 1) node[left]{$n$}  -- ( 1.5, 1) node[right]{$p+e+\bar{\nu}_e$};
+    \draw[thick, ->] ( 1.5,-1) node[right]{$p+e$} -- (-1.5,-1) node[left]{$n+\nu_e$};
+    \node[] at (0,0) {$\Delta S \sim \zeta \left(\Delta V\right)^2$};
+    \end{tikzpicture}
+\end{document}
